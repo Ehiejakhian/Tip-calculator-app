@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>spli<br>tter</h1>
+    <section id="whole">
+      <div class="first div">
+        <label for="bill-el" id="bill-label">
+          Bill
+        </label>
+        <input type="number" id="bill-el">
+        
+    
+        <label id="tip-select-label">Select Tip %</label>
+        <form id="tip-el">
+            <div class="fivepercent" value=".05">5%</div>
+            <div class="tenpercent" value=".10">10%</div>
+            <div class="fifteenpercent" value=".15">15%</div>
+            <div class="twentyfivepercent" value=".25">25%</div>
+            <div class="fiftypercent" value=".50">50%</div>
+            <div>
+              <input type="number" placeholder="Custom" id="percent-el" class="custompercent">
+            </div>
+        </form>
+        
+      
+        <label id="numOfPeople">
+          <span>Number of People</span>
+          <span id="peoplezero"></span>
+        </label>
+        <input type="number" id="num-el">
+        
+      </div>
+      
+      <div class="second div">
+
+        <div class="amount-grid">
+          <div class="amt">
+            <div id="tipAperson">
+              Tip Amount
+              <span id="perPerson">/ person</span>
+            </div>
+            <div id="moneyPerPerson" class="tip-el">
+              
+            </div>
+          </div>
+        
+          <div class="amt">
+            <div id="totalAperson">
+              Total
+              <span id="perPerson">/ person</span>
+            </div>
+            <div id="moneyPerPerson" class="total-el">
+              
+            </div>
+          </div>
+        </div>
+
+        <button id="reset" onclick="assign()">Reset</button>
+      </div>
+    </section>
+    
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Ehi Ejakhian</a>.
+    </div>
+    <script src="main.js"></script>
+  </body>
+  
+</html>
